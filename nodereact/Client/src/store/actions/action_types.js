@@ -1,0 +1,10 @@
+
+export const SUCCESS = "SUCCESS"
+export const FAILURE = "FAILURE"
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS"
+export const LOGIN_FAILURE = "LOGIN_FAILURE"
+export const PROFILE_ADD = "PROFILE_ADD"
+export const PROFILE_DEL = "PROFILE_DEL"
+export const USER_INPUT_EDIT = "USER_INPUT_EDIT"
+export const USER_INPUT_SUBMIT = "USER_INPUT_SUBMIT"
+
