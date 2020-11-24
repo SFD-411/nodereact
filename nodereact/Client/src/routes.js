@@ -25,17 +25,17 @@ const Routes = () => {
 
 	return(
 	    <div>
-i		<Router history={history}>
+		<Router history={history}>
 		<Header />
 		<br />
 		<br />
 		<div>
 		    <Switch>
-			<Route exact path='/' component{...Home} />
-			<Route path='/hooksform' component{...HooksForm} />
-			<Route path='/profile' component{...Profile} />
-			<Route path='/hookscontainer' component{...HooksContainer} />
-			<Route path='/authcheck' component{...AuthCheck} />
+			<Route exact path='/' component={Home} />
+			<Route path='/hooksform' component={HooksForm} />
+			<Route path='/profile' component={Profile} />
+			<Route path='/hookscontainer' component={HooksContainer} />
+			<Route path='/authcheck' component={AuthCheck} />
 
 			<PrivateRoute path='/privateroute' auth={context.authState} component={PrivateComponent} />
 			<PrivateRoute path='/profile' auth={context.authState} component={Profile} />

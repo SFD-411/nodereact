@@ -4,14 +4,12 @@ import axios from 'axios';
 const Home = props => {
 	useEffect(() => {
 		axios.get('/api/hello')
-		 .then(res=>setState(res.data))
+		 .then(res=>setState(res.content))
 		 .catch(err=> console.log(err))
 
 	},[])
 
-	console.log(useEffect);
-
-	const [state, setState] = useState("")
+	const [state, setState] = useState()
 
 	return(
 	<div>

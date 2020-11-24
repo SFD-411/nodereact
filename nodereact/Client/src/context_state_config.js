@@ -94,7 +94,7 @@ const ContextState = () => {
 		<Routes />
 	</Context.Provider>
 	</div>
-    )
+	)
 }
 
 export default ContextState;
