@@ -4,7 +4,7 @@ import axios from 'axios';
 const Home = props => {
 	useEffect(() => {
 		axios.get('/api/hello')
-		 .then(res=>setState(res.content))
+		 .then(res=>setState(res.data))
 		 .catch(err=> console.log(err))
 
 	},[])

@@ -4,6 +4,7 @@ import ContextState from './context_state_config';
 const App = () => {
 	return(
 	    <div>
+		React
 		<ContextState />
 	    </div>
 	)

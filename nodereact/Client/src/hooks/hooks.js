@@ -6,12 +6,12 @@ import Context from '../utils/context'
 const HooksContainer1 = () => {
 	const context = useContext(Context)
 
-	const [value, setValue] = useState(0)
+	const [value, setValue] = useState(100)
 	const [useEffectValue, setUseEffectValue] = useState(null)
 	const [state, dispatch] = useReducer(Reducer1.Reducer1, Reducer1.initState)
 
 	useEffect(() => {
-		setTimeout(() => setUseEffectValue("useEffect worked"), 3000 );
+		setTimeout(() => setUseEffectValue("useEffect value of " + value), 3000 );
 	}, [value])
 
 	const incValue = () => {
@@ -23,7 +23,7 @@ const HooksContainer1 = () => {
 	}
 
 	const handleuseEffectValue = () => {
-		setUseEffectValue("some value")
+		setUseEffectValue(value)
 	}
 
 	const handleDispatchTrue = () => {
@@ -38,12 +38,13 @@ const HooksContainer1 = () => {
 	    <div>
 		<div>
 		<button onClick={() => handleuseEffectValue()}> Handle Value </button>
+		<button onClick={() => incValue()}> Increase </button>
+		<button onClick={() => decValue()}> Decrease </button>
+		<br />
 		<button onClick={() => handleDispatchTrue()}> Dispatch True </button>
 		<button onClick={() => handleDispatchFalse()}> Dispatch False </button>
 		<button onClick={() => context.dispatchContextTrue()}> Context True </button>
 		<button onClick={() => context.dispatchContextFalse()}> Context False </button>
-		<button onClick={() => incValue()}> Increase </button>
-		<button onClick={() => decValue()}> Decrease </button>
 		<br />
 		{context.useContextSubmitState 
 			? <h3> {context.useContextSubmitState} </h3>

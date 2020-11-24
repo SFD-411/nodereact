@@ -7,16 +7,16 @@ const Profile = () => {
 	const RenderProfile = (props) => {
 		return(
 		    <div>
-			<h1> {props.profile.profile.nickname} </h1>
+			<h1> {props.profile.name} </h1>
 			<br />
-			<img src={props.profile.profile.picture} alt="" />
+			<img src={props.profile.picture} alt="" />
 			<br />
-			<h4> {props.profile.profile.email}
+			<h4> {props.profile.email}
 			<br />
-			{props.profile.profile.name}</h4>
+			{props.profile.name}</h4>
 			<br />
 			<h5> Email Verified : </h5>
-			{props.profile.profile.email_verified ? <p>Yes</p> : <p>No</p>}
+			{props.profile.email_verified ? <p>Yes</p> : <p>No</p>}
 			<br />
 		    </div>
 		)
