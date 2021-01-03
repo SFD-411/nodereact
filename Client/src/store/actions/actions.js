@@ -59,3 +59,29 @@ export const user_input_submit = (text) => {
 		payload:text
 	}
 }
+
+export const db_profile_set = (profile) => {
+	return {
+		type: ACTION_TYPES.DB_PROFILE_SET,
+		payload: profile
+	}
+}
+
+export const db_profile_del = () => {
+	return {
+		type: ACTION_TYPES.DB_PROFILE_DEL
+	}
+}
+
+export const db_posts_set = (posts) => {
+	return {
+		type: ACTION_TYPES.DB_POSTS_FETCH,
+		payload: posts
+	}
+}
+
+export const db_posts_del = () => {
+	return {
+		type: ACTION_TYPES.DB_POSTS_DEL,
+	}
+}

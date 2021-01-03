@@ -21,7 +21,7 @@ const AuthCheck = () => {
 			context.handleUserDelProfile()
 			history.replace('/')
 		}
-	}, [])
+	}, [context.authObj.userProfile, context])
 
 	return(
 		<div>

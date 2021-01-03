@@ -7,4 +7,8 @@ export const PROFILE_ADD = "PROFILE_ADD"
 export const PROFILE_DEL = "PROFILE_DEL"
 export const USER_INPUT_EDIT = "USER_INPUT_EDIT"
 export const USER_INPUT_SUBMIT = "USER_INPUT_SUBMIT"
+export const DB_PROFILE_SET = "DB_PROFILE_SET"
+export const DB_PROFILE_DEL = "DB_PROFILE_DEL"
+export const DB_POSTS_FETCH = "DB_POSTS_FETCH"
+export const DB_POSTS_DEL = "DB_POSTS_DEL"
 
